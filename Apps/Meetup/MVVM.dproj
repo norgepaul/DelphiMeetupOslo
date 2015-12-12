@@ -320,7 +320,7 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="F:\Bin\Debug\Win32\MVVM.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="..\..\..\Bin\DelphiMeetup\Debug\Win32\MVVM.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>MVVM.exe</RemoteName>
                         <Overwrite>true</Overwrite>
