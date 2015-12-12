@@ -9,3 +9,5 @@ The project demostrates:
 - Interfaces
 - Object and Interface inheritance
 - Anonymous method callbacks
+
+Built using Delphi 10 Seattle, but should work with all XE and DX Delphi versions.
