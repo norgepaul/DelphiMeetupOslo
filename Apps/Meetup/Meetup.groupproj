@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{955E3898-21AD-44F7-B118-75CD187A5391}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="MVVM.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MVVM">
+        <MSBuild Projects="MVVM.dproj"/>
+    </Target>
+    <Target Name="MVVM:Clean">
+        <MSBuild Projects="MVVM.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MVVM:Make">
+        <MSBuild Projects="MVVM.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MVVM"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MVVM:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MVVM:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
