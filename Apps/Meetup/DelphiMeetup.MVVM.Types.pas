@@ -1,4 +1,4 @@
-unit DelphiMeetup.Types;
+unit DelphiMeetup.MVVM.Types;
 
 interface
 

@@ -1,11 +1,11 @@
-unit DelphiMeetup.Factory;
+unit DelphiMeetup.MVVM.Factory;
 
 interface
 
 uses
   FMX.Forms,
 
-  DelphiMeetup.Interfaces;
+  DelphiMeetup.MVVM.Interfaces;
 
 type
   TDelphiMeetupFactory = class
@@ -19,8 +19,8 @@ type
 implementation
 
 uses
-  DelphiMeetup.Model,
-  DelphiMeetup.Classes;
+  DelphiMeetup.MVVM.Model,
+  DelphiMeetup.MVVM.Classes;
 
 { TDelphiMeetupFactory }
 

@@ -1,11 +1,11 @@
-unit DelphiMeetup.Classes;
+unit DelphiMeetup.MVVM.Classes;
 
 interface
 
 uses
   Classes, SysUtils,
 
-  DelphiMeetup.Interfaces;
+  DelphiMeetup.MVVM.Interfaces;
 
 type
   TBaseObject = class(TInterfacedObject,
@@ -35,7 +35,7 @@ type
 implementation
 
 uses
-  DelphiMeetup.Factory;
+  DelphiMeetup.MVVM.Factory;
 
 { THassleRobin }
 

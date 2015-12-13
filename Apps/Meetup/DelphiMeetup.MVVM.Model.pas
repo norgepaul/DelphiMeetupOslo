@@ -1,11 +1,11 @@
-unit DelphiMeetup.Model;
+unit DelphiMeetup.MVVM.Model;
 
 interface
 
 uses
   System.SysUtils, System.Classes, Generics.Collections,
 
-  DelphiMeetup.Interfaces;
+  DelphiMeetup.MVVM.Interfaces;
 
 type
   TDelphiMeetupModel = class(TDataModule,

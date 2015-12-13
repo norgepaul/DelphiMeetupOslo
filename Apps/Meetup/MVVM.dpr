@@ -3,12 +3,12 @@ program MVVM;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  DelphiMeetup.Model in 'DelphiMeetup.Model.pas' {DelphiMeetupModel: TDataModule},
-  DelphiMeetup.Interfaces in 'DelphiMeetup.Interfaces.pas',
-  DelphiMeetup.Classes in 'DelphiMeetup.Classes.pas',
-  DelphiMeetup.Types in 'DelphiMeetup.Types.pas',
-  DelphiMeetup.Factory in 'DelphiMeetup.Factory.pas',
-  DelphiMeetup.View.FMX.Form.Demo in 'DelphiMeetup.View.FMX.Form.Demo.pas' {frmMVVMDemo};
+  DelphiMeetup.MVVM.Model in 'DelphiMeetup.MVVM.Model.pas' {DelphiMeetupModel: TDataModule},
+  DelphiMeetup.MVVM.Interfaces in 'DelphiMeetup.MVVM.Interfaces.pas',
+  DelphiMeetup.MVVM.Classes in 'DelphiMeetup.MVVM.Classes.pas',
+  DelphiMeetup.MVVM.Types in 'DelphiMeetup.MVVM.Types.pas',
+  DelphiMeetup.MVVM.Factory in 'DelphiMeetup.MVVM.Factory.pas',
+  DelphiMeetup.MVVM.View.FMX.Form.Demo in 'DelphiMeetup.MVVM.View.FMX.Form.Demo.pas' {frmMVVMDemo};
 
 {$R *.res}
 
