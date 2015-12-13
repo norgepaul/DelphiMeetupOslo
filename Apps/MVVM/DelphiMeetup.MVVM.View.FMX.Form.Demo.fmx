@@ -1,0 +1,83 @@
+object frmMVVMDemo: TfrmMVVMDemo
+  Left = 0
+  Top = 0
+  Caption = 'Delphi Meetup Demo'
+  ClientHeight = 480
+  ClientWidth = 640
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Client
+    Margins.Top = 3.000000000000000000
+    Margins.Right = 3.000000000000000000
+    Margins.Bottom = 3.000000000000000000
+    Size.Width = 497.000000000000000000
+    Size.Height = 474.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 493.000000000000000000
+    Viewport.Height = 470.000000000000000000
+  end
+  object Layout1: TLayout
+    Align = Left
+    Margins.Left = 3.000000000000000000
+    Margins.Top = 3.000000000000000000
+    Position.X = 3.000000000000000000
+    Position.Y = 3.000000000000000000
+    Size.Width = 134.000000000000000000
+    Size.Height = 477.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object Button2: TButton
+      Action = actHassleRobin
+      Align = Top
+      Enabled = True
+      ImageIndex = -1
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 134.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Visible = True
+    end
+    object Button1: TButton
+      Action = actGetTime
+      Align = Top
+      Enabled = True
+      ImageIndex = -1
+      Margins.Bottom = 3.000000000000000000
+      Position.Y = 25.000000000000000000
+      Size.Width = 134.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Visible = True
+    end
+  end
+  object Splitter1: TSplitter
+    Align = Left
+    Cursor = crHSplit
+    MinSize = 20.000000000000000000
+    Position.X = 137.000000000000000000
+    Size.Width = 3.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ActionList1: TActionList
+    Left = 176
+    Top = 24
+    object actGetTime: TAction
+      Text = 'Get Time'
+      OnExecute = actGetTimeExecute
+    end
+    object actHassleRobin: TAction
+      Text = 'Hassle Robin'
+      OnExecute = actHassleRobinExecute
+    end
+  end
+end
